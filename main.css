@@ -1,0 +1,368 @@
+body{
+    background-color: #F5F6F6;
+    margin: 16px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-group{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14pt;
+}
+
+/* 左半邊 */
+.header-group > .group-left > img{
+    vertical-align: middle;
+}
+
+.header-group > .group-left > div{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 30px;
+}
+
+.header-group > .group-left > div:hover{
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: -0.7px; /*待修正*/
+}
+
+/* More功能 */
+.header-group >.group-left > .More-Group > .More-text{
+    display: inline-block;
+    padding-right: 2px;
+    font-weight: 600;
+}
+
+.header-group >.group-left > .More-Group > .More-triangle{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #000000 transparent transparent transparent;
+}
+
+.header-group > .group-right > img{
+    vertical-align: middle;
+    margin-left: 5px;
+    border-radius: 50%;
+    box-shadow: -10px 10px 20px rgba(0,0,0,0.2);
+}
+
+.header-group > .group-right > .Submit-button{
+    padding-right: 25px;
+    border-radius: 0;
+    box-shadow: 0 0 0;
+}
+
+.header-group > .group-right > img:hover{
+    cursor: pointer;
+}
+
+/* 搜尋部分 */
+
+.search-group{     
+    margin-top: 40px;
+    text-align: center;
+}
+
+.search-group > .main-title{
+    font-size: 32pt;
+}
+
+.search-group > .sub-title{
+    margin: 20px auto 0 auto;
+    width: 450px;
+    font-size: 12pt;
+    color: #979797;
+}
+
+.search-group > .search-input{
+    margin: 30px auto 50px auto;
+    width: 530px;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 118px auto 57px;
+    align-items: center;
+}
+
+.search-group > .search-input > img{
+    padding: 10px;
+}
+
+.search-group > .search-input > img:hover{
+    cursor: pointer;
+}
+
+.search-group > .search-input > .search-hint{
+    text-align: left;
+    padding-left: 15px;
+    color: #979797;
+}
+
+/* 項目分類部分 */
+
+.sort-bar{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14pt;
+}
+
+.sort-bar > .bar-left > div{
+    display: inline-block;
+    padding-right: 25px;
+    font-weight: 500;
+}
+
+.sort-bar > .bar-left >div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sort-bar > .bar-left > .Latest{
+    position: relative;
+}
+
+.sort-bar > .bar-left > .Latest > .redpoint{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ff4e00;
+    position: absolute;
+    top: 2px;
+    left: 58px;
+}
+
+.sort-bar > .bar-left > .Line{
+    width: 0px;
+    height: 15px;
+    border-left: 3px solid #707070;
+}
+
+.sort-bar > .bar-left > .Premium{
+    color: #3481EF;
+}
+
+.sort-bar > .bar-left > .Free{
+    color: #FF4E00;
+}
+
+.sort-bar > .bar-right > img{
+    padding-right: 25px;
+}
+
+.sort-bar > .bar-right > img:hover{
+    cursor: pointer;
+}
+
+/* 圖片部分 */
+.Vectors-group{
+    display: grid;
+    grid-template-columns: 365px 365px 365px;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.Vectors-group > li{
+    width: 365px;
+    list-style: none;  
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.Vectors-group > li > .group-top {
+   margin: 20px 20px 5px 20px;
+   width: 325px;
+   background-color: #F5F6F6;
+   border-radius: 20px;
+}
+
+.Vectors-group > li > .group-top > .menber-hint {
+    position: relative;
+    padding: 16px 0;
+    top: 0px;
+    right: -90px;
+ }
+
+ .Vectors-group > li > .group-top > .menber-hint > .Lock-icon{
+    vertical-align: middle;
+    padding-right: 5px;
+ }
+
+ .Vectors-group > li > .group-top > .menber-hint > span{
+    color: #979797;
+    font-size: 11pt;
+    font-weight: 600;
+    vertical-align: middle;
+ }
+
+.Vectors-group > li > .group-top > .vectors {
+    width: 139px;
+    height: 148px;
+    display: block;
+    margin: 0px auto;
+    padding: 10px 0 50px 0;
+ }
+
+.Vectors-group > li > .content{
+    font-size: 0pt;
+}
+
+.Vectors-group > li > .content > .title-letter{
+    font-size: 32pt;
+    color: #222429;
+}
+
+.Vectors-group > li > .content > .text{
+    font-size: 16pt;
+    color: #a8aaae;
+}
+
+.Vectors-group > li > .download{
+    margin: 15px auto 25px auto;
+}
+
+.Vectors-group > li > .download > span{
+    font-weight: 700;
+    font-size: 18pt;
+    text-decoration: underline;
+}
+
+.Vectors-group > li > .download:hover > span{
+    color:#3481EF;
+    cursor: pointer;
+}
+
+.Vectors-group > li > .download > .Download-icon{
+    position: relative;
+    left: 15px;
+}
+
+.Vectors-group > .middle-vectors{
+    box-shadow: 0px 40px 100px rgba(0,0,0,0.15);
+} 
+
+/* 底部部分 */
+.bottom-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 80px auto;
+}
+
+.bottom-group > .collection > .text{
+    color: #000000;
+    font-size: 14pt;
+    font-weight: 500;
+    width: 150px;
+    text-decoration: underline;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bottom-group > .collection > .text:hover{
+    color:#3481EF;
+    cursor: pointer;
+}
+
+
+.bottom-group > .collection >img{
+    vertical-align: middle;
+}
+
+.bottom-group > .nextpage-button{
+    background-color: white;
+    width: 150px;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+}
+
+.bottom-group > .nextpage-button:hover{
+    background-color: #cccccc;
+}
+
+
+.bottom-group > .nextpage-button > span{
+    font-size: 14pt;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.bottom-group > .nextpage-button > .Arrow{
+    display: inline-block;
+    padding-left: 30px;
+    position: relative;
+}
+
+.bottom-group > .nextpage-button > .Arrow >.Arrow1{
+    width: 20px;
+    border: solid black;
+    border-width: 0 0 3px 0;
+    position: relative;
+    top:3px;
+    left: 1px; 
+}
+
+.bottom-group > .nextpage-button > .Arrow >.Arrow2{
+    width: 10px;
+    border: solid black;
+    border-width: 0 0 3px 0;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 4px;
+    left: 13px;
+}
+
+
+.bottom-group > .nextpage-button > .Arrow >.Arrow3{
+    width: 10px;
+    border: solid black;
+    border-width: 0 0 3px 0;
+    transform: rotate(45deg);
+    position: relative;
+    top:-5.5px;
+    left: 13px;
+}
+
+.page-group > div{
+    display: inline-block;
+    color: #6e7b84;
+    font-size: 12pt;
+    font-weight: 500;
+}
+
+.page-group > img{
+    vertical-align: middle;
+    padding: 0 5px;
+}
+
+.page-group > img:hover{
+    cursor: pointer;
+}
+
+.page-group > .page{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid #a8aaae;
+    border-radius: 5px;
+    text-align: center;
+    color: #000000;
+}
